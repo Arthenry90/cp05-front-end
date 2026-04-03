@@ -3,65 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/Logo_Melodia.png" class="w-full h-auto max-w-lg object-cover">
     <title>Melodia</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/51733ec63c.js" crossorigin="anonymous"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'vibrant-pink': '#FF5A9E',
+              'vibrant-orange': '#FFB531',
+              'vibrant-blue': '#3AC9F1',
+              'vibrant-purple': '#7074FF',
+              'vibrant-green': '#4ADE8E',
+              'vibrant-yellow': '#FFC848',
+            }
+          }
+        }
+      }
+    </script>
+
   </head>
 
-  <body class="min-h-screen bg-slate-50 text-slate-800">
-    <header class="sticky top-0 z-50 border-b border-slate-200/70 bg-blue-300/80 backdrop-blur">
+  <body class="min-h-screen bg-slate-300 text-slate-800">
+    <header class="sticky top-0 z-50 border-b border-slate-200/70 bg-vibrant-purple backdrop-blur">
       <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <div class="flex items-center gap-3">
-          <div
-            class="grid h-10 w-10 place-items-center rounded-xl bg-white/70 text-sm font-bold text-blue-700 shadow-sm ring-1 ring-white/60"
-            aria-hidden="true"
-          >
-            M
+          <div class="grid h-10 w-10 place-items-center rounded-xl  text-sm font-bold text-blue-700" aria-hidden="true">
+            <img src="assets/Logo_Melodia.png" alt="Logo Melodia" class="w-full h-auto max-w-lg object-cover">
           </div>
           <span class="text-lg font-semibold tracking-tight text-slate-900">
-            LOGO
+            Melodia
           </span>
         </div>
 
         <nav aria-label="Navegação principal" class="hidden md:block">
-          <ul class="flex items-center gap-6 text-sm font-medium text-slate-700">
+          <ul class="flex items-center gap-6 text-sm font-medium text-white">
             <li>
-              <a
-                href="#inicio"
-                class="rounded-md px-2 py-1 hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-red-500/60 transition"
-              >
-                Início
+              <a href="#inicio" class="rounded-md px-2 py-1 hover:text-vibrant-pink focus:outline-none focus:ring-2 focus:ring-red-500/60 transition">
+              Início
               </a>
             </li>
             <li>
-              <a
-                href="#apresentacao"
-                class="rounded-md px-2 py-1 hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-red-500/60 transition"
-              >
-                Apresentação
+              <a href="#apresentacao" class="rounded-md px-2 py-1 hover:text-vibrant-orange focus:outline-none focus:ring-2 focus:ring-red-500/60 transition">
+              Apresentação
               </a>
             </li>
             <li>
-              <a
-                href="#funcionalidades"
-                class="rounded-md px-2 py-1 hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-red-500/60 transition"
-              >
-                Funcionalidades
+              <a href="#funcionalidades" class="rounded-md px-2 py-1 hover:text-vibrant-blue focus:outline-none focus:ring-2 focus:ring-red-500/60 transition">
+              Funcionalidades
               </a>
             </li>
             <li>
-              <a
-                href="#depoimentos"
-                class="rounded-md px-2 py-1 hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-red-500/60 transition"
-              >
-                Depoimento
+              <a href="#depoimentos" class="rounded-md px-2 py-1 hover:text-vibrant-green focus:outline-none focus:ring-2 focus:ring-red-500/60 transition">
+              Depoimento
               </a>
             </li>
             <li>
-              <a
-                href="#contato"
-                class="rounded-md px-2 py-1 hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-red-500/60 transition"
-              >
-                Contato
+              <a href="#contato" class="rounded-md px-2 py-1 hover:text-vibrant-yellow focus:outline-none focus:ring-2 focus:ring-red-500/60 transition">
+              Contato
               </a>
             </li>
           </ul>
@@ -103,7 +105,7 @@
             <div class="flex flex-col gap-3 sm:flex-row">
               <a
                 href="#apresentacao"
-                class="inline-flex justify-center rounded-lg bg-red-600 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-red-700 transition"
+                class="inline-flex justify-center rounded-lg bg-vibrant-purple px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-red-700 transition"
               >
                 Ver apresentação
               </a>
@@ -117,7 +119,7 @@
           </div>
 
           <!-- Card lateral -->
-          <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+          <div class="rounded-2xl bg-slate-300 p-6 shadow-sm ring-1 ring-slate-950">
             <h3 class="text-base font-semibold text-slate-900">
               Destaques rápidos
             </h3>
@@ -147,34 +149,278 @@
       </section>
 
       <!-- APRESENTAÇÃO -->
-      <section id="apresentacao" class="bg-white">
-        <div class="mx-auto max-w-6xl px-6 py-12">
-          <div class="mb-6">
-            <h3 class="text-2xl font-bold tracking-tight text-slate-900">
-              Apresentação
-            </h3>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">
-              Um resumo rápido do que o Melodia entrega para o usuário.
+      <section id="apresentacao" class="bg-slate-300 py-16">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="mb-12">
+            <span class="text-sm font-bold uppercase tracking-widest text-vibrant-purple">Onde o som ganha vida</span>
+            <h2 class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+              Mais que um player, <br class="hidden md:block" /> sua nova rede de áudio.
+            </h2>
+            <p class="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
+              O Melodia nasceu para ser o palco digital de artistas independentes e o refúgio de quem busca sons que ainda não chegaram ao mainstream.
             </p>
           </div>
 
-          <ul class="grid gap-4 sm:grid-cols-2">
-            <li class="rounded-xl bg-slate-50 p-5 ring-1 ring-slate-200">
-              <p class="text-sm font-semibold text-slate-900">loremaadasdas</p>
-              <p class="mt-2 text-sm text-slate-600">
-                Texto de apoio para explicar este item com mais clareza.
-              </p>
-            </li>
+          <div class="grid gap-8 md:grid-cols-3">
+            
+            <div class="group relative overflow-hidden rounded-3xl bg-vibrant-green p-8 text-white transition-all hover:-translate-y-1">
+              <div class="relative z-10">
+                <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white ring-1 ring-white/30">
+                  <i class="fa-solid fa-users-rays text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold">Pulso da Comunidade</h3>
+                <p class="mt-4 text-sm text-white">
+                  Siga produtores, comente em trechos das faixas e descubra o que seus amigos ouvem.
+                </p>
+              </div>
+              <div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-red-600/10 blur-3xl transition-all group-hover:bg-red-600/20"></div>
+            </div>
 
-            <li class="rounded-xl bg-slate-50 p-5 ring-1 ring-slate-200">
-              <p class="text-sm font-semibold text-slate-900">loremaadasdas</p>
-              <p class="mt-2 text-sm text-slate-600">
-                Texto de apoio para explicar este item com mais clareza.
+            <div class="group relative overflow-hidden rounded-3xl bg-vibrant-purple p-8 text-white transition-all hover:-translate-y-1">
+              <div class="relative z-10">
+                <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white ring-1 ring-white/30">
+                  <i class="fa-solid fa-cloud-arrow-up text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold">Suba seu Som</h3>
+                <p class="mt-4 text-sm text-blue-100">
+                  Hospede suas tracks com qualidade superior e alcance ouvintes sem intermediários.
+                </p>
+              </div>
+              <div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/10 blur-3xl transition-all group-hover:bg-white/20"></div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-3xl bg-vibrant-yellow p-8 text-white transition-all hover:-translate-y-1">
+              <div class="relative z-10">
+                <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white ring-1 ring-white/30">
+                  <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold">Feito para Descobertas</h3>
+                <p class="mt-4 text-sm text-red-100">
+                  Explore novos artistas e gêneros em uma interface moderna e intuitiva.
+                </p>
+              </div>
+              <div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/10 blur-3xl transition-all group-hover:bg-white/20"></div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- FUNCIONALIDADES -->
+      <section id="funcionalidades" class="bg-slate-300 py-16">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="mb-12 text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+              Por que escolher o Melodia?
+            </h2>
+            <p class="mt-4 text-lg text-slate-600">
+              Tecnologia de ponta para quem leva música a sério.
+            </p>
+          </div>
+          <div class="grid gap-8 md:grid-cols-3">
+            <div class="group rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 transition hover:shadow-md hover:ring-blue-500/50">
+              <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-vibrant-purple text-white shadow-lg shadow-vibrant-purple transition group-hover:scale-110">
+                <i class="fa-solid fa-headphones-simple text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">Som Superior</h3>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">
+                Experiência de áudio em alta fidelidade (Hi-Fi) para você ouvir cada detalhe da sua música favorita.
               </p>
-            </li>
-          </ul>
+            </div>
+            <div class="group rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 transition hover:shadow-md hover:ring-red-500/50">
+              <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-vibrant-pink text-white shadow-lg shadow-vibrant-pink transition group-hover:scale-110">
+                <i class="fa-solid fa-sliders text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">Personalização Total</h3>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">
+                Crie playlists personalizadas que se adaptam ao seu humor e rotina com apenas um toque.
+            </div>
+            <div class="group rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 transition hover:shadow-md hover:ring-emerald-500/50">
+              <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-vibrant-blue text-white shadow-lg shadow-vibrant-blue transition group-hover:scale-110">
+                <i class="fa-solid fa-wand-magic-sparkles text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">Inovação constante</h3>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">
+                Nosso algoritmo inteligente sugere novos artistas baseados exatamente no que você gosta de ouvir para garantir que nenhum talento fique escondido.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEPOIMENTOS -->
+      <section id="depoimentos" class="bg-slate-300 py-16">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="mb-12 text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+              O que diz a nossa comunidade
+            </h2>
+            <p class="mt-4 text-lg text-slate-600">
+              Milhares de apaixonados por música já mudaram sua forma de ouvir.
+            </p>
+          </div>
+
+          <div class="grid gap-8 md:grid-cols-3">
+            <div class="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 border-t-4 border-vibrant-pink">
+              <div class="flex gap-1 text-yellow-400 mb-4">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-600 italic">"A qualidade sonora é impecável. Como audiófilo, finalmente encontrei um app que respeita a fidelidade do áudio."</p>
+              <div class="mt-6 flex items-center gap-4">
+                <img src="https://i.pravatar.cc/400?img=8" alt="Foto de perfil" class="h-12 w-12 rounded-full object-cover ring-2 ring-vibrant-pink">
+                <div>
+                  <p class="font-bold text-slate-900 text-sm">Lucas Rocha</p>
+                  <p class="text-xs text-slate-500">Produtor Independente</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 border-t-4 border-vibrant-green">
+              <div class="flex gap-1 text-yellow-400 mb-4">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-600 italic">"O Melodia mudou como eu descubro novos artistas. O algoritmo de recomendação é simplesmente de outro planeta!"</p>
+              <div class="mt-6 flex items-center gap-4">
+                <img src="https://i.pravatar.cc/400?img=5" alt="Foto de perfil" class="h-12 w-12 rounded-full object-cover ring-2 ring-vibrant-green">
+                <div>
+                  <p class="font-bold text-slate-900 text-sm">Beatriz Souza</p>
+                  <p class="text-xs text-slate-500">Ouvinte Premium</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 border-t-4 border-vibrant-blue">
+              <div class="flex gap-1 text-yellow-400 mb-4">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p class="text-slate-600 italic">"Interface limpa e muito rápida. Subir minhas tracks e receber feedback da comunidade é gratificante demais."</p>
+              <div class="mt-6 flex items-center gap-4">
+                <img src="https://i.pravatar.cc/400?img=7" alt="Foto de perfil" class="h-12 w-12 rounded-full object-cover ring-2 ring-vibrant-blue">
+                <div>
+                  <p class="font-bold text-slate-900 text-sm">Marcos Viana</p>
+                  <p class="text-xs text-slate-500">DJ & Beatmaker</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section id="contato" class="bg-slate-300 py-16">
+        <div class="mx-auto max-w-4xl px-6">
+          <div class="rounded-3xl bg-slate-900 p-8 md:p-12 shadow-2xl relative overflow-hidden">
+            <div class="absolute -right-20 -bottom-20 h-64 w-64 rounded-full bg-blue-600/20 blur-3xl"></div>
+            <div class="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-red-600/10 blur-3xl"></div>
+
+            <div class="relative z-10 grid gap-10 md:grid-cols-2 items-center">
+              <div>
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                  Faça parte da batida.
+                </h2>
+                <p class="mt-4 text-lg text-slate-400">
+                  Fique por dentro de novos lançamentos, artistas em ascensão e atualizações exclusivas do Melodia.
+                </p>
+                
+                <div class="mt-8 flex items-center gap-3 text-vibrant-purple">
+                  <i class="fa-solid fa-envelope-open-text text-2xl"></i>
+                  <span class="text-sm font-medium text-slate-300">marketing@melodia.app</span>
+                </div>
+              </div>
+
+              <form class="flex flex-col gap-4">
+                <div>
+                  <label for="nome" class="block text-sm font-medium text-slate-300 mb-1">Nome completo</label>
+                  <input 
+                    type="text" 
+                    id="nome" 
+                    placeholder="Seu nome aqui"
+                    class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                  >
+                </div>
+                
+                <div>
+                  <label for="email" class="block text-sm font-medium text-slate-300 mb-1">E-mail</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="exemplo@email.com"
+                    class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                  >
+                </div>
+
+                <button 
+                  type="submit" 
+                  class="mt-2 w-full rounded-xl bg-vibrant-purple px-6 py-4 text-sm font-bold text-white shadow-lg hover:bg-red-700 transition-all active:scale-95"
+                >
+                  Quero me inscrever agora
+                </button>
+                
+                <p class="text-[10px] text-center text-slate-500 uppercase tracking-widest mt-2">
+                  Respeitamos sua privacidade. Sem spam.
+                </p>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+    <footer class="bg-slate-900 py-12 text-vibrant-purple">
+      <div class="mx-auto max-w-6xl px-6">
+        <div class="grid gap-10 md:grid-cols-4">
+          
+          <div class="md:col-span-2">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="grid h-10 w-10 place-items-center rounded-xl  text-sm font-bold text-blue-700" aria-hidden="true">
+                <img src="assets/Logo_Melodia.png" alt="Logo Melodia" class="w-full h-auto max-w-lg object-cover">
+              </div>
+              <span class="text-xl font-bold tracking-tight">Melodia</span>
+            </div>
+            <p class="text-sm leading-relaxed text-vibrant-purple max-w-sm">
+              A plataforma definitiva para artistas independentes e amantes de música que buscam o próximo som que vai mudar suas vidas.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="mb-6 text-sm font-bold uppercase tracking-widest text-vibrant-purple">Explorar</h4>
+            <ul class="space-y-4 text-sm text-vibrant-purple">
+              <li><a href="#inicio" class="hover:text-red-500 transition">Início</a></li>
+              <li><a href="#apresentacao" class="hover:text-red-500 transition">Sobre</a></li>
+              <li><a href="#funcionalidades" class="hover:text-red-500 transition">Funcionalidades</a></li>
+              <li><a href="#depoimentos" class="hover:text-red-500 transition">Comunidade</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="mb-6 text-sm font-bold uppercase tracking-widest text-vibrant-purple">Social</h4>
+            <div class="flex gap-4 mb-8">
+              <a href="#" class="grid h-10 w-10 place-items-center rounded-full bg-white/5 hover:bg-red-600 transition text-vibrant-purple">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="grid h-10 w-10 place-items-center rounded-full bg-white/5 hover:bg-blue-600 transition text-vibrant-purple">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+              <a href="#" class="grid h-10 w-10 place-items-center rounded-full bg-white/5 hover:bg-blue-400 transition text-vibrant-purple">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+            <a href="#" class="text-xs text-vibrant-purple hover:underline">Política de Privacidade</a>
+          </div>
+
+        </div>
+
+        <div class="mt-12 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-xs text-vibrant-purple">
+            Copyright © 2026. Todos os direitos reservados.
+          </p>
+          <div class="flex items-center gap-2 text-xs text-vibrant-purple">
+            <span>Desenvolvido com</span>
+            <i class="fa-solid fa-heart text-red-600"></i>
+            <span>pela equipe Melodia</span>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
