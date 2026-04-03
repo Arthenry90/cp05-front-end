@@ -1,8 +1,20 @@
-# Projeto CP4 Front-End - Ecommerce EcoTrend
+# Projeto CP05 Front-end- Design - App Melodia
 
-## Descricao do projeto
+# Projeto desenvolvido para fins acadêmicos
 
-Esse projeto faz parte de uma atividade avaliativa, e tem como objetivo o desenvolvimento de um site focado em produtos sustentaveis de comércio. 
+🎵 Melodia - Sua Música, Sua Forma
+
+O **Melodia** é uma Landing Page moderna e responsiva desenvolvida para o Check-point 05 da disciplina de Front-end Desing. O projeto foca em oferecer uma interface vibrante e intuitiva para amantes de música e artistas independentes que buscam novas descobertas musicais.
+
+## 🎨 Identidade Visual
+
+O projeto segue um estilo **Moderno e Clean**, utilizando uma paleta de cores personalizada:
+**Pink Vibrante (#FF5A9E)**
+**Laranja Vibrante (#FFB531)**
+**Azul Vibrante (#3AC9F1)**
+**Roxo Vibrante (#7074FF)**
+**Verde Vibrante (#4ADE8E)**
+**Amarelo Vibrante (#FFC848)**
 
 ## Integrantes
 
