@@ -9,12 +9,12 @@ O **Melodia** é uma Landing Page moderna e responsiva desenvolvida para o Check
 ## 🎨 Identidade Visual
 
 O projeto segue um estilo **Moderno e Clean**, utilizando uma paleta de cores personalizada:
-**Pink Vibrante (#FF5A9E)**
-**Laranja Vibrante (#FFB531)**
-**Azul Vibrante (#3AC9F1)**
-**Roxo Vibrante (#7074FF)**
-**Verde Vibrante (#4ADE8E)**
-**Amarelo Vibrante (#FFC848)**
+* **Pink Vibrante (#FF5A9E)**
+* **Laranja Vibrante (#FFB531)**
+* **Azul Vibrante (#3AC9F1)**
+* **Roxo Vibrante (#7074FF)**
+* **Verde Vibrante (#4ADE8E)**
+* **Amarelo Vibrante (#FFC848)**
 
 ## Integrantes
 
